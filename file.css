@@ -1,4 +1,4 @@
-/* Style for the dropdown */
+/* General body styles for center alignment */
 body {
     font-family: Arial, sans-serif;
     display: flex;
@@ -8,19 +8,25 @@ body {
     margin: 0;
   }
   
+  /* Dropdown container */
   .dropdown {
     position: relative;
     width: 200px;
   }
   
+  /* Dropdown header */
   .dropdown-header {
     padding: 10px;
     background-color: #f0f0f0;
     cursor: pointer;
     border: 1px solid #ccc;
     border-radius: 4px;
+    display: inline-block;
+    width: 100%;
+    text-align: left;
   }
   
+  /* Dropdown list hidden by default */
   .dropdown-list {
     list-style: none;
     padding: 0;
@@ -33,23 +39,28 @@ body {
     max-height: 200px;
     overflow-y: auto;
     display: none;
+    z-index: 1;
   }
   
+  /* Dropdown item */
   .dropdown-item {
     padding: 10px;
     cursor: pointer;
   }
   
+  /* Hover effect for dropdown item */
   .dropdown-item:hover {
     background-color: #e0e0e0;
   }
   
+  /* Active dropdown header */
   .dropdown-header.active {
     border-color: #007bff;
   }
   
+  /* Selected item style */
   .dropdown-item.selected {
     background-color: #007bff;
-    color: #fff;
+    color: white;
   }
   
