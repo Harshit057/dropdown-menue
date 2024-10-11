@@ -60,7 +60,7 @@ body {
   
   /* Selected item style */
   .dropdown-item.selected {
-    background-color: #007bff;
+    background-color: #082e56;
     color: white;
   }
   
